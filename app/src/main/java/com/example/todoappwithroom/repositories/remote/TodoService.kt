@@ -1,6 +1,7 @@
 package com.example.todoappwithroom.repositories.remote
 
 import com.example.todoappwithroom.models.TodoInsert
+import com.example.todoappwithroom.models.TodoModel
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -9,15 +10,12 @@ interface TodoService {
     fun getAllTodo(): Call<TodoResponse>
 
     @POST("api/v1/todos")
-    fun insertTodo(
-        @Body
-        body: TodoInsert
-    ): Call<InsertResponse>
+    fun insertTodo(@Body body: TodoInsert): Call<InsertResponse>
 
-//    @DELETE("api/v1/todos")
-//    fun deleteTodo(id: Long): Long
+/*    @DELETE("api/v1/todos")
+    fun deleteTodo(id: Long): Long
 
-//    @PUT("api/v1/todos")
-//    fun updateTodo(todoModel: TodoModel): Call<>
+    @PUT("api/v1/todos")
+    fun updateTodo(todoModel: TodoModel): Call<>*/
 
 }

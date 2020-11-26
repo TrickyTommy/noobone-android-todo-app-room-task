@@ -8,5 +8,5 @@ data class TodoInsert(
 	val task: String,
 
 	@field:SerializedName("status")
-	val status: String
+	val status: String = "false"
 )
