@@ -2,7 +2,7 @@ package com.example.todoappwithroom.models
 
 import com.google.gson.annotations.SerializedName
 
-data class InsertResponse(
+data class TodoInsert(
 
 	@field:SerializedName("task")
 	val task: String,

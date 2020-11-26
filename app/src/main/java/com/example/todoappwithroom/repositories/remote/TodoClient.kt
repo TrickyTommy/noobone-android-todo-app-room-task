@@ -7,7 +7,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object ApiClient {
+object TodoClient {
     const val BASE_URL = "https://online-course-todo.herokuapp.com/"
 
     private val gson: Gson by lazy { GsonBuilder().setLenient().create() }
@@ -26,8 +26,7 @@ object ApiClient {
             .build()
     }
 
-
-    val userService: TodoService by lazy {
+    val todoService: TodoService by lazy {
         retrofit.create(TodoService::class.java)
     }
 }

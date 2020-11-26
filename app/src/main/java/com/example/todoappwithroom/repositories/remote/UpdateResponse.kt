@@ -1,4 +1,4 @@
-package com.example.todoappwithroom.models
+package com.example.todoappwithroom.repositories.remote
 
 import com.google.gson.annotations.SerializedName
 
